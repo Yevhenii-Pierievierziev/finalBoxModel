@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact form</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<header class="header">
+				<div class="contact-content">
+					<div class="contacts-content__image _ibg">
+						<picture>
+							<source srcset="img/bg/01.webp" type="image/webp"><img src="img/bg/01.jpg" alt="" /></picture>
+					</div>
+				</div>
+				<div class="contacts-content _container">
+					<form action="#">
+						<div class="contacts-content-body">
+							<h1 class="contacts-content__title">Contact form</h1>
+							<p class="contacts-content__subtitle">Please fill in your information and we'll be sending your
+								order.
+							</p>
+							<ul class="contacts-content__form">
+								<li class="contacts-content-form__row">
+									<label for="your-name">Your name</label>
+									<input autocomplete="off" type="text" id="your-name" name="form[]" data-value="first name"
+										class="input _req" />
+									<input autocomplete="off" type="text" id="your-name" name="form[]" data-value="last name"
+										class="input _req" />
+								</li>
+								<li class="contacts-content-form__row">
+									<label for="your-email">Your email</label>
+									<input autocomplete="off" type="text" id="your-email" name="form[]"
+										data-value="your_mail@mail.com" class="input _req" />
+								</li>
+								<li class="contacts-content-form__row">
+									<label for="your-phone">Phone *</label>
+									<input autocomplete="off" type="tel" id="your-phone" name="form[]" data-value="000"
+										class="input phone _req" />
+									<input autocomplete="off" type="tel" name="form[]" data-value="000"
+										class="input phone _req" />
+									<input autocomplete="off" type="tel" name="form[]" data-value="0000"
+										class="input phone _req" />
+								</li>
+								<li class="contacts-content-form__row">
+									<label for="your-subject">Message subject *</label>
+									<select name="form[]" id="your-subject" class="catalog-header__select">
+										<option value="1" selected="selected">Other</option>
+										<option value="2">Other №2</option>
+										<option value="3">Other №3</option>
+										<option value="4">Other №4</option>
+									</select>
+								</li>
+								<li class="contacts-content-form__row">
+									<label for="your-message">Message *</label>
+									<textarea autocomplete="off" id="your-message" name="form[]" data-value=""
+										class="input _req"></textarea>
+								</li>
+								<hr>
+								<li class="contacts-content-form__row">
+									<button type="submit" class="contacts-content-form__btn btn">Submit form</button>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</header>
+		</div>
+
+	</div>
+
+	<script src="js/vendors.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
